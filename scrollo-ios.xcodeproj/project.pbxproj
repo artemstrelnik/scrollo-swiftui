@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE47857428001BA500351F44 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47857328001BA500351F44 /* Tests_iOS.swift */; };
+		CE47857F28001BA500351F44 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47857E28001BA500351F44 /* Tests_macOS.swift */; };
+		CE47858128001BA500351F44 /* scrollo_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE47855528001BA200351F44 /* scrollo_ios.xcdatamodeld */; };
+		CE47858228001BA500351F44 /* scrollo_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE47855528001BA200351F44 /* scrollo_ios.xcdatamodeld */; };
+		CE47858328001BA500351F44 /* scrollo_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47855728001BA200351F44 /* scrollo_iosApp.swift */; };
+		CE47858428001BA500351F44 /* scrollo_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47855728001BA200351F44 /* scrollo_iosApp.swift */; };
+		CE47858528001BA500351F44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47855828001BA200351F44 /* ContentView.swift */; };
+		CE47858628001BA500351F44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47855828001BA200351F44 /* ContentView.swift */; };
+		CE47858728001BA500351F44 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47855928001BA300351F44 /* Persistence.swift */; };
+		CE47858828001BA500351F44 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47855928001BA300351F44 /* Persistence.swift */; };
+		CE47858928001BA500351F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE47855A28001BA500351F44 /* Assets.xcassets */; };
+		CE47858A28001BA500351F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE47855A28001BA500351F44 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE47857028001BA500351F44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE47855028001BA200351F44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE47855E28001BA500351F44;
+			remoteInfo = "scrollo-ios (iOS)";
+		};
+		CE47857B28001BA500351F44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE47855028001BA200351F44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE47856628001BA500351F44;
+			remoteInfo = "scrollo-ios (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE47855628001BA200351F44 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
+		CE47855728001BA200351F44 /* scrollo_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrollo_iosApp.swift; sourceTree = "<group>"; };
+		CE47855828001BA200351F44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE47855928001BA300351F44 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CE47855A28001BA500351F44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE47855F28001BA500351F44 /* scrollo-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scrollo-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE47856228001BA500351F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE47856728001BA500351F44 /* scrollo-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scrollo-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE47856928001BA500351F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE47856A28001BA500351F44 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		CE47856F28001BA500351F44 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE47857328001BA500351F44 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		CE47857528001BA500351F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE47857A28001BA500351F44 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE47857E28001BA500351F44 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		CE47858028001BA500351F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE47855C28001BA500351F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47856428001BA500351F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47856C28001BA500351F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47857728001BA500351F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE47854F28001BA200351F44 = {
+			isa = PBXGroup;
+			children = (
+				CE47855428001BA200351F44 /* Shared */,
+				CE47856128001BA500351F44 /* iOS */,
+				CE47856828001BA500351F44 /* macOS */,
+				CE47857228001BA500351F44 /* Tests iOS */,
+				CE47857D28001BA500351F44 /* Tests macOS */,
+				CE47856028001BA500351F44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE47855428001BA200351F44 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CE47855728001BA200351F44 /* scrollo_iosApp.swift */,
+				CE47855828001BA200351F44 /* ContentView.swift */,
+				CE47855928001BA300351F44 /* Persistence.swift */,
+				CE47855A28001BA500351F44 /* Assets.xcassets */,
+				CE47855528001BA200351F44 /* scrollo_ios.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CE47856028001BA500351F44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE47855F28001BA500351F44 /* scrollo-ios.app */,
+				CE47856728001BA500351F44 /* scrollo-ios.app */,
+				CE47856F28001BA500351F44 /* Tests iOS.xctest */,
+				CE47857A28001BA500351F44 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE47856128001BA500351F44 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CE47856228001BA500351F44 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		CE47856828001BA500351F44 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				CE47856928001BA500351F44 /* Info.plist */,
+				CE47856A28001BA500351F44 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		CE47857228001BA500351F44 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CE47857328001BA500351F44 /* Tests_iOS.swift */,
+				CE47857528001BA500351F44 /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		CE47857D28001BA500351F44 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				CE47857E28001BA500351F44 /* Tests_macOS.swift */,
+				CE47858028001BA500351F44 /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE47855E28001BA500351F44 /* scrollo-ios (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE47858D28001BA500351F44 /* Build configuration list for PBXNativeTarget "scrollo-ios (iOS)" */;
+			buildPhases = (
+				CE47855B28001BA500351F44 /* Sources */,
+				CE47855C28001BA500351F44 /* Frameworks */,
+				CE47855D28001BA500351F44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "scrollo-ios (iOS)";
+			productName = "scrollo-ios (iOS)";
+			productReference = CE47855F28001BA500351F44 /* scrollo-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE47856628001BA500351F44 /* scrollo-ios (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE47859028001BA500351F44 /* Build configuration list for PBXNativeTarget "scrollo-ios (macOS)" */;
+			buildPhases = (
+				CE47856328001BA500351F44 /* Sources */,
+				CE47856428001BA500351F44 /* Frameworks */,
+				CE47856528001BA500351F44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "scrollo-ios (macOS)";
+			productName = "scrollo-ios (macOS)";
+			productReference = CE47856728001BA500351F44 /* scrollo-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE47856E28001BA500351F44 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE47859328001BA500351F44 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				CE47856B28001BA500351F44 /* Sources */,
+				CE47856C28001BA500351F44 /* Frameworks */,
+				CE47856D28001BA500351F44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE47857128001BA500351F44 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = CE47856F28001BA500351F44 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CE47857928001BA500351F44 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE47859628001BA500351F44 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				CE47857628001BA500351F44 /* Sources */,
+				CE47857728001BA500351F44 /* Frameworks */,
+				CE47857828001BA500351F44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE47857C28001BA500351F44 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = CE47857A28001BA500351F44 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE47855028001BA200351F44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CE47855E28001BA500351F44 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CE47856628001BA500351F44 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CE47856E28001BA500351F44 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CE47855E28001BA500351F44;
+					};
+					CE47857928001BA500351F44 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CE47856628001BA500351F44;
+					};
+				};
+			};
+			buildConfigurationList = CE47855328001BA200351F44 /* Build configuration list for PBXProject "scrollo-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE47854F28001BA200351F44;
+			productRefGroup = CE47856028001BA500351F44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE47855E28001BA500351F44 /* scrollo-ios (iOS) */,
+				CE47856628001BA500351F44 /* scrollo-ios (macOS) */,
+				CE47856E28001BA500351F44 /* Tests iOS */,
+				CE47857928001BA500351F44 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE47855D28001BA500351F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47858928001BA500351F44 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47856528001BA500351F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47858A28001BA500351F44 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47856D28001BA500351F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47857828001BA500351F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE47855B28001BA500351F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47858328001BA500351F44 /* scrollo_iosApp.swift in Sources */,
+				CE47858728001BA500351F44 /* Persistence.swift in Sources */,
+				CE47858128001BA500351F44 /* scrollo_ios.xcdatamodeld in Sources */,
+				CE47858528001BA500351F44 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47856328001BA500351F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47858428001BA500351F44 /* scrollo_iosApp.swift in Sources */,
+				CE47858828001BA500351F44 /* Persistence.swift in Sources */,
+				CE47858228001BA500351F44 /* scrollo_ios.xcdatamodeld in Sources */,
+				CE47858628001BA500351F44 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47856B28001BA500351F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47857428001BA500351F44 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47857628001BA500351F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47857F28001BA500351F44 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE47857128001BA500351F44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE47855E28001BA500351F44 /* scrollo-ios (iOS) */;
+			targetProxy = CE47857028001BA500351F44 /* PBXContainerItemProxy */;
+		};
+		CE47857C28001BA500351F44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE47856628001BA500351F44 /* scrollo-ios (macOS) */;
+			targetProxy = CE47857B28001BA500351F44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE47858B28001BA500351F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE47858C28001BA500351F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CE47858E28001BA500351F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99LARKX4Z6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scrollo-ios";
+				PRODUCT_NAME = "scrollo-ios";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE47858F28001BA500351F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99LARKX4Z6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scrollo-ios";
+				PRODUCT_NAME = "scrollo-ios";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE47859128001BA500351F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 99LARKX4Z6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scrollo-ios";
+				PRODUCT_NAME = "scrollo-ios";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CE47859228001BA500351F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 99LARKX4Z6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scrollo-ios";
+				PRODUCT_NAME = "scrollo-ios";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CE47859428001BA500351F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99LARKX4Z6;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "scrollo-ios (iOS)";
+			};
+			name = Debug;
+		};
+		CE47859528001BA500351F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99LARKX4Z6;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "scrollo-ios (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE47859728001BA500351F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 99LARKX4Z6;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "scrollo-ios (macOS)";
+			};
+			name = Debug;
+		};
+		CE47859828001BA500351F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 99LARKX4Z6;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "scrollo-ios (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE47855328001BA200351F44 /* Build configuration list for PBXProject "scrollo-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE47858B28001BA500351F44 /* Debug */,
+				CE47858C28001BA500351F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE47858D28001BA500351F44 /* Build configuration list for PBXNativeTarget "scrollo-ios (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE47858E28001BA500351F44 /* Debug */,
+				CE47858F28001BA500351F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE47859028001BA500351F44 /* Build configuration list for PBXNativeTarget "scrollo-ios (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE47859128001BA500351F44 /* Debug */,
+				CE47859228001BA500351F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE47859328001BA500351F44 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE47859428001BA500351F44 /* Debug */,
+				CE47859528001BA500351F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE47859628001BA500351F44 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE47859728001BA500351F44 /* Debug */,
+				CE47859828001BA500351F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE47855528001BA200351F44 /* scrollo_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE47855628001BA200351F44 /* Shared.xcdatamodel */,
+			);
+			currentVersion = CE47855628001BA200351F44 /* Shared.xcdatamodel */;
+			path = scrollo_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE47855028001BA200351F44 /* Project object */;
+}
